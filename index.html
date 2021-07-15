@@ -1,1 +1,60 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aamer" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+
+    <title>Books</title>
+
+    <style></style>
+  </head>
+  <body>
+    <h2 class="s1">Books Store</h2>
+    <form id="book-form" class="s2" autocomplete="on">
+      <label for="bname">Book Name:</label><br />
+      <input type="text" id="bname" name="bname" required autofocus /><br />
+      <label for="author">Author:</label><br />
+      <input
+        type="text"
+        id="author"
+        name="author"
+        placeholder="Aamer"
+        required
+      /><br />
+      <label for="price">Price$:</label><br />
+      <input type="text" id="price" name="price" required /><br /><br />
+      <div class="s2">
+        <input
+          type="submit"
+          value="Add Book"
+          class="btn btn-primary btn-block"
+        />
+        <input
+          type="button"
+          value="Delete Book"
+          class="btn btn-primary btn-block"
+        />
+        <input
+          type="button"
+          value="Edit Book"
+          class="btn btn-primary btn-block"
+        />
+      </div>
+    </form>
+    <br />
+    <div style="overflow-x: auto">
+      <table class="s2">
+        <tr>
+          <th>Book Name</th>
+          <th>Author</th>
+          <th>Price$</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
