@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styels.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Aamer" />
@@ -12,7 +12,7 @@
     <style></style>
   </head>
   <body>
-    <h2 class="s1">Books Store</h2>
+    <h1 class="s1">Books Store</h1>
     <form id="book-form" class="s2" autocomplete="on">
       <label for="bname">Book Name:</label><br />
       <input type="text" id="bname" name="bname" required autofocus /><br />
@@ -38,9 +38,11 @@
           class="btn btn-primary btn-block"
         />
         <input
+          id="edit"
           type="button"
           value="Edit Book"
           class="btn btn-primary btn-block"
+          onclick="addFunction()"
         />
       </div>
     </form>
