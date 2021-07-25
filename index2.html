@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aamer" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+
+    <title>booksList</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Books List</h1>
+    </header>
+    <form>
+      <input type="text" class="books-input"  placeholder="Title,Author,Price$"
+      required autofocus/>
+      <button class="books-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+     
+    </form>
+    <div class="books-container">
+      <ul class="books-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
