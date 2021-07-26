@@ -19,3 +19,31 @@ document.addEventListener("DOMContentLoaded", getBooks);
 booksButton.addEventListener("click", addBook);
 booksList.addEventListener("click", deleteBook);
 booksList.addEventListener("click", editBook);
+
+
+//Functions
+
+function addBook(e) {
+    //Prevent natural behaviour
+    e.preventDefault();
+    //Create books div
+    const booksDiv = document.createElement("div");
+    booksDiv.classList.add("books");
+    //Create list
+    const newBook = document.createElement("li");
+    newBook.innerText = booksInput.value;
+  
+  }
+  
+  function deleteBook(e) {
+   
+   
+  }
+  
+  function editBook(e) {
+   
+  }
+  
+  
+  
+  
