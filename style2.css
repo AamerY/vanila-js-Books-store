@@ -1,173 +1,138 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background-image: linear-gradient(120deg, #ad1037 0%, #4f82cf 100%);
-  color: white;
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
-}
-
-header {
-  font-size: 2rem;
-}
-
-header
- {
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-color: rgb(216, 209, 209);
-font-size: 3rem;
-font-weight: 50;
-text-align: center;
-margin: 1rem 0 3rem; 
-font-family: 'Hind', sans-serif;
-}
-
-.title{
-color: lime;
-text-transform: uppercase;
-font-weight: 800;
-}
-
-.inputDiv{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.input{
-  padding: 0.5rem 1rem;
-  outline: none;
-  border: none;
-  height: 50px;
-  border-radius:0px;
-  width: 350px;
-  margin: 0.25rem;
-  transition: .5s;
-  font-size: 1.15rem;
-}
-
-.add-btn{
-outline: none;
-  border: none;
-  height: 50px;
-  border-radius: 0px;
-  width: 50px;
-  background-color: lime;
-  color: white;
-  cursor: pointer;
-  transition: .5s;
-  margin: 0.25rem;
-}
-
-.add-btn:hover{
-background: #ff6f47;
-  color: white;
-opacity: 0.7;
-}
-
-.container{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-margin-top: 2rem;
-}
-
-.item{
-margin: 0.5rem;
-background: white;
-font-size: 1.5rem;
-color: black;
-display: flex;
-justify-content: space-between;
-align-items: center;
-transition: all 1s ease;
-}
-
-.item_input{
-background: none;
-outline: none;
-border: none;
-color: rgb(12, 2, 2);
-font-size: 1.4rem;
-width: 245px;
-padding: 0rem 0.5rem;
-}
-
-
-
-.remove,
-.edit {
-  background: #f31036;
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-}
-.edit {
-  background: rgb(11, 212, 162);
-}
-
-.fa-trash,
-.fa-edit {
-  pointer-events: none;
-}
-
-.animation {
-  transform: translateY(10rem) rotateZ(20deg);
-  opacity: 0;
-}
-
-/*CUSTOM SELECTOR */
-select {
--webkit-appearance: none;
--moz-appearance: none;
--ms-appearance: none;
-appearance: none;
-outline: 0;
-box-shadow: none;
-border: 0 !important;
-background-image: none;
-}
-
-/* Custom Select */
-.select {
-margin: 1rem;
-position: relative;
-overflow: hidden;
-}
-select {
-color: #ff6f47;
-font-family: "Poppins", sans-serif;
-cursor: pointer;
-width: 12rem;
-}
-/* Arrow */
-.select::after {
-content: "\25BC";
-position: absolute;
-top: 0;
-right: 0;
-padding: 1rem;
-background: #ff6f47;
-cursor: pointer;
-pointer-events: none;
-}
-/* Transition */
-/*
-.select:hover::after {
-transform: scale(1.5);
-}
-*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(120deg, #ad1037 0%, #4f82cf 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  header {
+    font-size: 2rem;
+  }
+  
+  header,
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: rgb(255, 255, 255);
+  }
+  form button {
+    color: #4823cf;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #ff6f47;
+    color: white;
+  }
+  .books-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .books-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+  .books {
+    margin: 0.5rem;
+    background: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+  }
+  
+  .books li {
+    flex: 1;
+  }
+  
+  .trash-btn,
+  .edit-btn {
+    background: #f31036;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .edit-btn {
+    background: rgb(11, 212, 162);
+  }
+  .books-item {
+    padding: 0rem 0.5rem;
+  }
+  
+  .fa-trash,
+  .fa-edit {
+    pointer-events: none;
+  }
+  
+  .animation {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  
+  .editd {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  /*CUSTOM SELECTOR */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  /* Transition */
+  /*
+  .select:hover::after {
+    transform: scale(1.5);
+  }
+  */
+  
