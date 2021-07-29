@@ -44,13 +44,15 @@ justify-content: center;
 align-items: center;
 }
 
-.input{
+.input_title,
+.input_author,
+.input_price{
   padding: 0.5rem 1rem;
   outline: none;
   border: none;
   height: 50px;
   border-radius:0px;
-  width: 350px;
+  width: 200px;
   margin: 0.25rem;
   transition: .5s;
   font-size: 1.15rem;
@@ -97,13 +99,19 @@ transition: all 1s ease;
 
 .item_input{
 background: none;
-outline: none;
-border: none;
+outline: 0;
+text-align: center;
+ border-style: solid;
 color: rgb(12, 2, 2);
 font-size: 1.4rem;
-width: 245px;
-padding: 0rem 0.5rem;
+width: 200px;
+padding: 0rem 0rem;
+display: flex;
 }
+
+
+
+
 
 
 
